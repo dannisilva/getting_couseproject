@@ -70,6 +70,10 @@ res_data = data_full_sel %>%
         group_by(id, activity) %>%
         summarise_if(is.numeric, mean)
 
+<<<<<<< HEAD
 write.table(res_data, 
        "/Users/danielesilva/Documents/Curso de Ciencia de Dados/Getting and Cleaning Data/Course project/getting_couseproject/res_data.txt",
        row.names = F)
+=======
+fwrite(res_data, "/Users/danielesilva/Documents/Curso de Ciencia de Dados/Getting and Cleaning Data/Course project/getting_couseproject/res_data.txt")
+>>>>>>> 354e4632eb0c7f11e4fa3b0a55355bea14ae1dab
